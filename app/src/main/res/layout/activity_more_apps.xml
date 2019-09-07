@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.samplestickerapp.MoreAppsActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:text="Download more apps"
+        android:textSize="30dp"
+        android:textColor="#dd898888"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_margin="10dp">
+
+        <ImageButton
+            android:id="@+id/app1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/appdouaa"/>
+
+        <ImageButton
+            android:id="@+id/app2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/demo_ci"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_margin="10dp">
+
+        <ImageButton
+            android:id="@+id/app3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/demo_ci"/>
+
+        <ImageButton
+            android:id="@+id/app4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/demo_ci"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_margin="10dp">
+
+        <ImageButton
+            android:id="@+id/app5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/demo_ci"/>
+
+        <ImageButton
+            android:id="@+id/app6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/demo_ci"/>
+
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/bannerAdmob_Id">
+    </com.google.android.gms.ads.AdView>
+
+</LinearLayout>
